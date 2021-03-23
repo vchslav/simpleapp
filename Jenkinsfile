@@ -7,7 +7,8 @@ pipeline {
                 echo 'Test!'
 
                 script {
-                    sh(script: "python3.8 hello.py", returnStdout: true)
+                    env.WAR_NAME = sh(script: "python3.8 hello.py", returnStdout: true).toString().trim()
+                    echo $WAR_NAME
                 }
             }
         }
