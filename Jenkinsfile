@@ -7,7 +7,7 @@ pipeline {
                 echo 'Test!'
 
                 script {
-                    sh(script: "python hello.py", returnStdout: true)
+                    sh(script: "python3.8 hello.py", returnStdout: true)
                 }
                 echo shell("python hello.py")
             }
