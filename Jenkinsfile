@@ -8,7 +8,7 @@ pipeline {
                     script {
                         env.OUTPUT = sh(script: "python3.8 hello.py", returnStdout: true).toString().trim()
                         echo "${OUTPUT}"
-                        sh(sleep 30)
+                        sh "sleep 30"
                     }
                 }
             }
