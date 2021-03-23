@@ -1,3 +1,5 @@
+#pyowm 3.2.0 https://pypi.org/project/pyowm/
+
 from pyowm import OWM
 from pyowm.utils import config
 from pyowm.utils import timestamps
