@@ -9,7 +9,6 @@ pipeline {
                 script {
                     sh(script: "python3.8 hello.py", returnStdout: true)
                 }
-                echo shell("python hello.py")
             }
         }
     }
