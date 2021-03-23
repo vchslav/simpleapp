@@ -5,7 +5,11 @@ pipeline {
         stage('Run Python Script') {
             steps {
                 echo 'Test!'
-                shell("python hello.py")
+
+                script {
+                    sh(script: "python hello.py", returnStdout: true)
+                }
+                echo "python hello.py")
             }
         }
     }
