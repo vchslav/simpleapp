@@ -7,9 +7,6 @@ pipeline {
                 script {
                     env.OUTPUT = sh(script: "python3.8 hello.py", returnStdout: true).toString().trim()
                     echo "${OUTPUT}"
-
-                    env.OUTPUT = sh(script: "python3.8 weather.py", returnStdout: true).toString().trim()
-                    echo "${OUTPUT}"
                 }
             }
         }
